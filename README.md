@@ -7,45 +7,23 @@
 
  
 
-## Description
+# Product Microservices
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+1. Clonar repositorio
+2. Crear `.env` basado en el `.env.template`
 
-## Project setup
-
+3. Instalar dependencias
 ```bash
 $ npm install
 ```
-
-## Compile and run the project
-
+4. Ejecutar la migración de prisma
 ```bash
-# development
-$ npm run start
-
+$ npx prisma migrate dev
+```
+5. Ejecutar
+```bash
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
 
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## PRISMA
-```bash
-# Init or update Database
-$ npx prisma migrate dev --name init
-```
 
