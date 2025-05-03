@@ -80,7 +80,7 @@ export class ProductsService extends PrismaClient implements OnModuleInit{
 
   async validateProduct(ids: number[]){
     //! Purga todos los duplicados que puedan venir
-    ids = Array.from( new Set());
+    ids = Array.from( new Set(ids));
 
     const products = await this.product.findMany({
       where:{
@@ -100,4 +100,5 @@ export class ProductsService extends PrismaClient implements OnModuleInit{
     return products;
 
   }
+
 }
